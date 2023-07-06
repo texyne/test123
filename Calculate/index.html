@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <h1>Калькулятор матеріалів #1</h1>
+            <div class="calc-section">
+                <h3>Тип ремонту</h3>
+                <select id="repair-type">
+                    <option value="capital">Капітальний</option>
+                    <option value="current">Поточний</option>
+                    <option value="reconstruction">Реконструкція</option>
+                </select>
+
+                <h3>Оберіть тип будівлі</h3>
+                <select id="building-type">
+                    <option value="stone">Кам'яний</option>
+                    <option value="wooden">Дерев'яний</option>
+                    <option value="panel">Панельний</option>
+                </select>
+
+                <h3>Площа об'єкту</h3>
+                <input type="number" id="object-area" placeholder="Введіть площу" style="width: 100%; box-sizing: border-box;">
+                <a id="calculate-btn" href="" class="gradient-button">Розрахувати</a>
+
+                <h3>Оберіть тип приміщення</h3>
+                <select id="room-type">
+                    <option value="residential">Житлове приміщення</option>
+                    <option value="non-residential">Нежиле приміщення</option>
+                    <option value="auxiliary">Допоміжне приміщення</option>
+                </select>
+
+                <div class="estimate-section">
+                    <h3>Приблизний підсумок вартості</h3>
+                    <p>Вартість праці: <span id="total-cost" class="zero-value">0</span> <span class="grn-color">грн.</span></p>
+                    <p>Вартість матеріалів: <span id="total-cost" class="zero-value">0</span> <span class="grn-color">грн.</span></p>
+                    <p>Загальна вартість: <span id="total-cost" class="zero-value">0</span> <span class="grn-color">грн.</span></p>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
